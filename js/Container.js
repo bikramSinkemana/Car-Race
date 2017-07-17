@@ -1,7 +1,7 @@
 function Container() {
 	this.element;
-	this.height=300 ;
-	this.width=50 ;
+	this.height=1000 ;
+	this.width=600 ;
 	
 	this.overflow='hidden';
 	this.color='blue';

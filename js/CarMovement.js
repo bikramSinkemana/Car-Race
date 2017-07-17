@@ -24,7 +24,7 @@ function CarMovement(cars,container,gameOver,enemyCarCreation,slider) {
 			}
 			// cars[1].enemyMove();
 			// cars[2].enemyMove();
-		},1000/60);
+		},10000);
 	}
 
 	this.wallCollisionCheck=function(){
@@ -79,10 +79,10 @@ function CarMovement(cars,container,gameOver,enemyCarCreation,slider) {
 			
 			if(key.keyCode=="37"){
 				
-				var value= -15;
+				var value= -175;
 				cars[0].move(value);
 			}else if(key.keyCode=="39"){
-				var value2= 15;
+				var value2= 175;
 				cars[0].move(value2);
 			}
 		}

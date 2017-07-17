@@ -2,8 +2,8 @@ function Car(x, y){
 
 	this.x = x ;
     this.y = y ;
-	this.height=15;
-	this.width=10;
+	this.height=210;
+	this.width=100;
 	this.color='red';
   
 	this.element;
@@ -15,12 +15,14 @@ function Car(x, y){
 		this.element.style.height=this.height;
 		this.element.style.position='absolute';
 		this.element.style.background=this.color;
-   // this.element.style.background='url("images/background.png")';
+  
 		this.element.style.zIndex=10;
      if (this.color=='red') {
       this.element.style.className='hero';
+        this.element.style.background='url("images/hero-image.png")';
     }else{
       this.element.style.className='villain';
+       this.element.style.background='url("images/villain-image.png")';
     }
 
 		this.setPosition(this.x,this.y);

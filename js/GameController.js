@@ -12,7 +12,7 @@ function GameController(elementId) {
 		slider.slide();
 		slider.showScore();
 		//slider.stop();
-		var car=new Car(20,285);
+		var car=new Car(250,790);
 		car.create();
 		container.append(car.element);
 			cars.push(car);
