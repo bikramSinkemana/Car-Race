@@ -1,4 +1,4 @@
-function Car(x, y){
+ function Car(x, y){
 
 	this.x = x ;
     this.y = y ;
@@ -43,8 +43,13 @@ function Car(x, y){
   	
   }
   this.enemyMove=function(){
-  	this.y+=1;
+  	this.y+=2;
   	this.element.style.top=this.y;
+  }
+  this.removeEnemyCar = function(parent){
+    parent.element.removeChild(this.element);
+    
+    return true;
   }
 
 }

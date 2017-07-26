@@ -2,7 +2,9 @@ function Slider() {
 	this.element;
 	var that=this;
 	this.intervalId;
-	this.marginTop=-this.height;
+	this.width=600;
+	this.height=6000;
+	
 	this.color='green';
 	this.score=0;
 
@@ -15,26 +17,26 @@ function Slider() {
 		//this.element.style.backgroundImage='url(https://0.s3.envato.com/files/171528471/thumbs/2.jpg)';
 
 		this.element.style.background=this.color;
-		 this.element.style.background='url("images/background.png")';
+	   this.element.style.background='url("images/background.png")';
+	   //this.element.style.backgroundRepeat='repeat-y';
 	//	 this.element.style.background;
 		//this.element.innerHTML="dasdfl lalfjasl kjlajsdflkj dihkda llkskhasdf ";
 		
 		// body...
 	}
-	this.append=function(element){
-		this.element.appendChild(element);
-	}
+	
 	this.slide=function(){
 		that.intervalId=setInterval(function(){
-			that.marginTop=
+			
+			//that.marginTop=
 			that.element.style.marginTop=that.marginTop;
 
-			that.marginTop+=1;
+			//that.marginTop+=1;
 			that.score+=.05;
 			var scoreBoard = document.getElementById('score');
 			 scoreBoard.innerHTML = Math.floor(that.score);
 			console.log();
-		},1000/60);
+		},1);
 
 
 	}
@@ -44,5 +46,5 @@ function Slider() {
 	this.stop=function(){
 		clearInterval(that.intervalId);
 	}
-	// body...
+	//body...
 }

@@ -6,8 +6,8 @@ function EnemyCarCreation(cars,container) {
 
 	this.create=function(){
 		that.intervarId=setInterval(function(){
-			var randomNumbers=[];
-			randomNumbers=twoRandomNumber(0,3);
+		var randomNumbers=[];
+		randomNumbers=twoRandomNumber(0,3);
 		var car2=new Car((randomNumbers[0]*100)+75*(randomNumbers[0]+1),-100);
 		car2.color='black';
 		car2.create();
@@ -18,11 +18,8 @@ function EnemyCarCreation(cars,container) {
 		that.container.append(car3.element);
 		that.cars.push(car2);
 		that.cars.push(car3);
-		
 
-
-
-		},1000);
+		},1500);
 
 	}
 	this.stop=function(){

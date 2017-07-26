@@ -14,7 +14,7 @@ function Container() {
 		this.element.style.height=this.height;
 		this.element.style.overflow=this.overflow;
 		this.element.style.background=this.color;
-		debugger;
+		
 		// body...
 	}
 	this.append=function (element) {
