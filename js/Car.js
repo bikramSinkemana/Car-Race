@@ -1,7 +1,7 @@
  function Car(x, y){
 
 	this.x = x ;
-    this.y = y ;
+  this.y = y ;
 	this.height=210;
 	this.width=100;
 	this.color='red';

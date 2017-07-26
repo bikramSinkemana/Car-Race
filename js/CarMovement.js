@@ -51,7 +51,9 @@ function CarMovement(cars,container,gameOver,enemyCarCreation,slider) {
 
 	this.wallCollisionCheck=function(){
 		that.intervalId=setInterval(function(){
-			if(cars[0].x<=0||(cars[0].x + cars[0].width) >= container.width){
+			debugger;
+			console.log(that.cars[0].x);
+			if(that.cars[0].x<=0||(that.cars[0].x + that.cars[0].width) >= container.width){
 				
 				that.stop();
 				that.flag=true;

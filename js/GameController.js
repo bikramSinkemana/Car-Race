@@ -43,11 +43,11 @@ function GameController(elementId) {
 		container.append(gameOver.element);
 
 		var carMovement= new CarMovement(cars,container,gameOver,enemyCarCreation,slider);
-		var options = {
-			cars: cars,
-			container: container,
-		}
-		var carMovement= new CarMovement(options);
+		// var options = {
+		// 	cars: cars,
+		// 	container: container,
+		// }
+		// var carMovement= new CarMovement(options);
 		carMovement.carMove();
 		carMovement.enemyCarMove();
 		carMovement.wallCollisionCheck();
